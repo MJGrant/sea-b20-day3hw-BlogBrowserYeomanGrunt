@@ -294,7 +294,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-    cssmin: {
+    //cssmin: {
       // This task is pre-configured if you do not wish to use Usemin
       // blocks for your CSS. By default, the Usemin block from your
       // `index.html` will take care of minification, e.g.
@@ -309,7 +309,7 @@ module.exports = function(grunt) {
       //         ]
       //     }
       // }
-    },
+    //},
     htmlmin: {
       dist: {
         options: {
@@ -364,7 +364,7 @@ module.exports = function(grunt) {
         '<%= yeoman.dist %>/styles/{,*/}*.css',
         '!<%= yeoman.dist %>/scripts/vendor/*'
       ],
-      uglify: true
+      //uglify: true
     },
     concurrent: {
       server: [
@@ -426,8 +426,8 @@ module.exports = function(grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
-    'cssmin',
-    'uglify',
+    //'cssmin',
+    //'uglify',
     'modernizr',
     'copy:dist',
     'rev',
