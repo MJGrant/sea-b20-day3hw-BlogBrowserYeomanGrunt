@@ -5,7 +5,7 @@ var http = require('http');
 
 var app = express();
 
-app.use(express.static(__dirname + '/dist/'));
+app.use(express.static(__dirname + '/app/'));
 
 var server = http.createServer(app);
 
