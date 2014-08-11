@@ -27,27 +27,32 @@
  
       <article>
  
-        <h3><a href="#">Heroku Apps Today</a></h3>
-        <h6>Written by <a href="#">MJ Grant</a> on August 10, 2014.</h6>
+        <h3><a href="#">Creating a Heroku Blog App</a></h3>
+        <h6>Written by <a href="#">MJ Grant</a> on August 11, 2014.</h6>
  
         <div class="row">
           <div class="large-6 columns">
-            <p>Today I learned how to set up Heroku, tie it to a github project, and use it to stand up a simple blog app.
+            <p>This blog is hosted on Heroku. Here's how it was created:</p>
             <br><br>
-            Some gotchas: don’t directly edit the css, the build process will clobber it with scss contents.
-            <br><br>
-            Don’t edit dist or tmp directly. Edit the source - think of dist and tmp as compiled code.</p>
+            <ol>
+              <li>Create a new repo on Github</li>
+              <li>Clone the repo onto your local environment</li>
+              <li>Do your initial commit, then create a branch: git checkout -b workingbranch</li>
+              <li>Follow this tutorial to make the actual blog: https://github.com/ivanoats/JS-Blog-Yo-Browserify-Foundation</li>
+              <li>Make a heroku.com account</li>
+              <li>Log into Heroku.com and set your Dynos to at least 1</li>
+              <li>Run grunt build</li>
+              <li>Follow these steps to push to Heroku: https://devcenter.heroku.com/articles/git#deploying-code</li>
+              <li>Commit and push the blog to a branch on Github</li>
+              <li>Make sure /dist/ is not in .gitignore</li>
+              <li>Edit server.js: '/app/' should be '/dist'</li>
+              <li>Push to Github</li>
+              <li>Push to Heroku: git push heroku workingbranch:master</li>
+            </ol>
         </div>
- 
-        <p>Before we use heroku, we need a server. grunt build is essential to success.
-        </p>
- 
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
- 
       </article>
  
       <hr/>
- 
       <article>
  
         <h3><a href="#">The Case of the Missing CSS</a></h3>
@@ -62,10 +67,6 @@
             <img src="http://placehold.it/400x240&text=[img]"/>
           </div>
         </div>
- 
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
- 
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
  
       </article>
  
