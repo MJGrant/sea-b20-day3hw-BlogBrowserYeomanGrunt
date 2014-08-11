@@ -4672,3 +4672,14 @@ th.hide-for-touch {
    Base Stylesheet
    _base.scss
    ========================================================================== */
+body {
+  background-color: #333333; }
+
+.row {
+  background-color: white; }
+
+.content {
+  padding-left: 18px; }
+
+ol, ul {
+  padding-left: 40px; }

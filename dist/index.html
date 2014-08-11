@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Mandi's Blog</title>
-  <link rel="stylesheet" href="styles/7ef01f75.app.css">
+  <link rel="stylesheet" href="styles/b0a8e389.app.css">
 </head>
 <body>
        
@@ -31,14 +31,14 @@
         <h6>Written by <a href="#">MJ Grant</a> on August 11, 2014.</h6>
  
         <div class="row">
-          <div class="large-6 columns">
+          <div class="content">
             <p>This blog is hosted on Heroku. Here's how it was created:</p>
-            <br><br>
+            <br>
             <ol>
               <li>Create a new repo on Github</li>
               <li>Clone the repo onto your local environment</li>
               <li>Do your initial commit, then create a branch: git checkout -b workingbranch</li>
-              <li>Follow this tutorial to make the actual blog: https://github.com/ivanoats/JS-Blog-Yo-Browserify-Foundation</li>
+              <li>Follow <a href="https://github.com/ivanoats/JS-Blog-Yo-Browserify-Foundation">this tutorial</a> to make the actual blog: </li>
               <li>Make a heroku.com account</li>
               <li>Log into Heroku.com and set your Dynos to at least 1</li>
               <li>Run grunt build</li>
@@ -49,19 +49,23 @@
               <li>Push to Github</li>
               <li>Push to Heroku: git push heroku workingbranch:master</li>
             </ol>
-        </div>
+            When grunt serve is running, the blog will be automatically updated in the browser as you work on it. This "quick preview" feature is particularly helpful when building the stylesheet.
+          </div>
       </div></article>
  
       <hr>
       <article>
  
         <h3><a href="#">The Case of the Missing CSS</a></h3>
-        <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
+        <h6>Written by <a href="#">MJ Grant</a> on August 12, 2012.</h6>
  
         <div class="row">
           <div class="large-6 columns">
-            <p>Why does this site lack its css file?</p>
-            <p>I must need to build it again. Build using grunt build.</p>
+            <p>This site was missing its css styles for a while. Luckily, the fix was simple:</p>
+            <ol>
+            <li>run <b>grunt build</b></li>
+            <li>In server.js, change '/app/' to '/dist'.</li>
+            </ol>
           </div>
           <div class="large-6 columns">
             <img src="http://placehold.it/400x240&text=[img]">
@@ -101,14 +105,12 @@
       <hr>
       <div class="row">
         <div class="large-6 columns">
-          <p>© Copyright no one at all. Go to town.</p>
+          <p>© Copyright Mandi Grant 2014</p>
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
           </ul>
         </div>
       </div>

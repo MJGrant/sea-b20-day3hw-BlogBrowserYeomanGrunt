@@ -3,7 +3,6 @@
    app.scss
    ========================================================================== */
 
-
 /* Vendor Styles and Setting (foundation > settings)
    ======================================================================== */
 @import "foundation";
@@ -18,3 +17,21 @@
    ======================================================================== */
 @import "components/base";
 
+$primary-color: #333;
+$accent-color: #dfdfdf;
+
+body { 
+  background-color:$primary-color;
+}
+
+.row { 
+  background-color:#fff;
+}
+
+.content {
+  padding-left:18px;
+}
+
+ol, ul {
+  padding-left:40px;
+}
