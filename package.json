@@ -1,6 +1,6 @@
 {
-  "name": "sea-b20-day3hw-blogbrowseryeomangrunt",
-  "version": "0.0.0",
+  "name": "BlogBrowserYeomanGrunt",
+  "version": "0.0.1",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-copy": "~0.5.0",
@@ -36,12 +36,60 @@
     "node": ">=0.10.0"
   },
   "browserify": {
-    "transform": ["browserify-shim"]
+    "transform": [
+      "browserify-shim"
+    ]
   },
   "browser": {
     "lodash": "./app/bower_components/lodash/dist/lodash.js"
   },
   "browserify-shim": {
     "lodash": "global:lodash"
-  }
+  },
+  "description": "sea-b20-day3hw-BlogBrowserYeomanGrunt =====================================",
+  "main": "server.js",
+  "dependencies": {
+    "browserify": "^3.29.1",
+    "browserify-shim": "^3.2.2",
+    "debowerify": "^0.5.2",
+    "express": "^4.8.2",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^0.6.5",
+    "grunt-bower-install": "^0.8.0",
+    "grunt-browserify": "^1.3.2",
+    "grunt-concurrent": "^0.4.3",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-connect": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.7.0",
+    "grunt-contrib-htmlmin": "^0.1.3",
+    "grunt-contrib-imagemin": "^0.4.1",
+    "grunt-contrib-jshint": "^0.8.0",
+    "grunt-contrib-uglify": "^0.2.7",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-mocha": "^0.4.11",
+    "grunt-modernizr": "^0.4.1",
+    "grunt-rev": "^0.1.0",
+    "grunt-sass": "^0.9.0",
+    "grunt-svgmin": "^0.3.1",
+    "grunt-usemin": "^2.0.2",
+    "jshint-stylish": "^0.1.5",
+    "load-grunt-tasks": "^0.2.1",
+    "should": "^3.1.4",
+    "time-grunt": "^0.2.10"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MJGrant/sea-b20-day3hw-BlogBrowserYeomanGrunt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MJGrant/sea-b20-day3hw-BlogBrowserYeomanGrunt/issues"
+  },
+  "homepage": "https://github.com/MJGrant/sea-b20-day3hw-BlogBrowserYeomanGrunt"
 }
